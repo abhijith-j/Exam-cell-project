@@ -1,0 +1,12 @@
+<div class="input-group">
+                            <span class="input-group-text">DESIGNATION</span>
+                            <input class="form-control" type="text" name="designation" placeholder="DESIGNATION">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" name="designation">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item">HOD</a></li>
+                                    <li><a class="dropdown-item">ASSISTANT</a></li>
+                                    <li><a class="dropdown-item">ASSISTANT</a></li>
+                                    <li><a class="dropdown-item">ASSOCIATE</a></li>
+                                </ul>
+                            </button>
+                        </div>

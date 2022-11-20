@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<?php
+		include_once 'databaseconnect.php';
+	?>
+<head>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<title>PROJECT</title>
+</head>	
+
+<body>
+<div class="mb-3 row">
+<form autocomplete="off" method="POST">
+	<h1>EMPLOYEE DETAILS</h1>
+	<label for=name>NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+	<input type="text" name="textbox1"><br>
+	<br>
+	<label for=id>EMPLOYEE ID</label>
+	<input type="text" name="textbox2"><br>
+		<br>
+	<label for=dept>DEPARTMENT</label>
+	<input type="text" name="textbox3"><br>
+		<br>
+	<label for=desig>DESIGNATION</label>
+	<select name="textbox4">
+    	<option value="HOD">HOD</option>
+    	<option value="PROFESSOR">PROFESSOR</option>
+   	 	<option value="ASSOCIATE">ASSOCIATE</option>
+    	<option value="ASSISTANT">ASSISTANT</option>
+  	</select>
+		<br>
+	<input type="submit" formaction="inputtuple.php" value= "SUBMIT"><br><br><br>
+</form>
+</div>
+<div class="mb-3 row">
+<form class="d-flex" action="fileimp.php" method="POST" enctype="multipart/form-data">
+	<div class="col-auto">
+	<input class="form-control" type="file" name="filenm">
+	</div>
+	<div class="col-auto">
+	<button class="btn btn-primary mb -3" type="submit" name="sub">IMPORT</button>
+	</div> 
+</form>
+</div>
+<div class="mb-3 row">
+<form>
+	<button class="btn btn-primary mb -3" type="submit" formaction="delete.html">Delete</button>
+</form>
+</div>
+<div class="mb-3 row">
+<form >
+	<button class="btn btn-primary mb -3" type="submit" formaction="admin.html">BACK</button>
+</form>
+</div>
+<div class="container">
+	<div class="row aligh-items-start">
+		<div class="col">
+			NAME
+		</div>
+		<div class="col">
+			STAFF ID
+		</div>
+		<div class="col">
+			DEPARTMENT
+		</div>
+		<div class="col">
+			DESIGNATION
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+</body>
+</html>

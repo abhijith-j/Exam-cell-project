@@ -1,0 +1,194 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			
+			background: linear-gradient(120deg,#0b65c5, #3b1d74);
+			background-size: cover;
+			font-family:sans-serif ;
+			margin-top: 40px;
+
+
+		}
+		.regform{
+			width: 800px;
+			background-color: rgb(0, 0, 0,0.6);
+			margin: auto;
+			color: #FFFFFF;
+			padding: 10px 0px 10px 0px;
+			text-align: center;
+			border-radius: 15px 15px 0px 0px;
+
+		}
+		.main{
+			background-color:rgb(0, 0, 0,0.5);
+			width: 800px;
+			margin: auto;
+	}
+
+	form{
+		padding: 10px;
+
+	}
+	#name{
+		width: 100%;
+		height: 50px;
+
+	}
+	.name{
+		margin-left: 25px;
+		margin-top: 30px;
+		width: 125px;
+		color: white;
+		padding: 0 22px;
+		font-size: 16px;
+		font-weight: 700;
+        margin-bottom: 20px;
+
+	}
+    .name1{
+		margin-left: 25px;
+		margin-top: 50px;
+		width: 125px;
+		color: white;
+		padding: 0 22px;
+		font-size: 16px;
+		font-weight: 700;
+
+	}
+	
+	
+	.hod{
+		position: relative;
+		left: 30px;
+	
+		width: 75px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+
+	}
+    .hod1{
+		position: relative;
+		left: 30px;
+	
+		width: 75px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+
+	}
+
+	
+	
+	button::before{
+			background: linear-gradient(135deg, #71b7e6, #9b59b6);
+		display: block;
+		margin: 20px 0px 0px 20px;
+		text-align: center;
+		border-radius:25px;
+		border: 2px solid white;
+		padding: 14px 50px;
+		outline: none;
+		color: white;
+		cursor: pointer;
+		margin-left: 250px;
+		margin-bottom: 20px;
+	}
+	button:hover{
+	
+		background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+	}
+
+	button{
+		background: linear-gradient(135deg, #71b7e6, #9b59b6);
+		display: block;
+		margin: 20px 0px 0px 20px;
+		text-align: center;
+		border-radius: 25px;
+		border: 2px solid white;
+		padding: 14px 110px;
+		outline: none;
+		color: white;
+		cursor: pointer;
+		margin-left: 250px;
+		margin-bottom: 20px;
+		margin-top: 0px;
+	}
+	/*button:hover{
+		background-color: #5390F;
+	}*/
+	</style>
+</head>
+<body>
+	<div class="regform"><h1>SEATING ARRANGEMENT</h1></div>
+	<div class="main">
+		<form action="seatingStudents.php" autocomplete="off" method="POST"></form>
+			
+                
+                    <label class="name">SELECT YEAR</label>
+                    <select  class="hod"name="y1">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="All">All</option>
+                    </select>
+                    <select  class="hod"name="y2">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="All">All</option>
+                    </select>
+                
+			
+
+                    <label class="name">SELECT BRANCH</label>
+                    <select class="hod1"name="b1">
+                        <option value=""></option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="ME">ME</option>
+                        <option value="CE">CE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="All">All</option>
+                    </select>
+                    <select class="hod1"name="b2">
+                        <option value=""></option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="ME">ME</option>
+                        <option value="CE">CE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="All">All</option>
+                    </select>
+                    <form>
+                        
+                        <div><label class="name">NO OF STUDENTS IN EACH CLASS</label>
+                        <input type="text" name="num" />
+                    </div>
+                    </form>
+                    
+             <form><button type="submit" name="submit_button">SUBMIT</button></form>   
+			
+            <form action="input.php">
+                <button formaction="inpu.html" href="#" class="btn" type="submit">RETURN   </button>
+            </form>
+		</form>
+
+	</div>
+
+</body>
+</html>	

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			
+			background: linear-gradient(120deg,#0b65c5, #3b1d74);
+			background-size: cover;
+			background-position: center;
+			font-family:sans-serif ;
+			margin-top: 40px;
+		}
+		.regform{
+			width: 850px;
+			background-color: rgb(0, 0, 0,0.6);
+			margin: auto;
+			color: #FFFFFF;
+			padding: 10px 0px 10px 0px;
+			text-align: center;
+			border-radius: 15px 15px 0px 0px;
+
+		}
+		.main{
+			background-color:rgb(0, 0, 0,0.5);
+			width: 850px;
+			margin: auto;
+		}
+
+		form{
+			position: relative;
+			padding: 10px;
+			top: 10px
+		}
+		#name{
+			width: 100%;
+			height: 50px;
+
+		}
+		.name{
+			margin-left: 25px;
+			margin-top: 30px;
+			width: 125px;
+			color: white;
+			padding: 0 22px;
+			font-size: 16px;
+			font-weight: 700;
+	        margin-bottom: 20px;
+
+		}
+	    .name1{
+			margin-left: 25px;
+			margin-top: 50px;
+			width: 125px;
+			color: white;
+			padding: 0 22px;
+			font-size: 16px;
+			font-weight: 700;
+
+		}
+		
+		
+		.hod{
+			position: relative;
+			left: 20px;
+		
+			width: 90px;
+			line-height: 40px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+
+		}
+	    .hod1{
+			position: relative;
+			left: 20px;
+		
+			width: 90px;
+			line-height: 40px;
+			border-radius: 6px;
+			padding: 0 22px;
+			font-size: 16px;
+
+		}
+
+		
+		
+		button::before{
+				background: linear-gradient(135deg, #71b7e6, #9b59b6);
+			display: block;
+			margin: 20px 0px 0px 20px;
+			text-align: center;
+			border-radius:25px;
+			border: 2px solid white;
+			padding: 14px 50px;
+			outline: none;
+			color: white;
+			cursor: pointer;
+			margin-left: 250px;
+			margin-bottom: 20px;
+		}
+		button:hover{
+		
+			background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+		}
+
+		button{
+			background: linear-gradient(135deg, #71b7e6, #9b59b6);
+			display: block;
+			margin: 20px 0px 0px 20px;
+			text-align: center;
+			border-radius: 25px;
+			border: 2px solid white;
+			padding: 14px 110px;
+			outline: none;
+			color: white;
+			cursor: pointer;
+			margin-left: 250px;
+			margin-bottom: 20px;
+			margin-top: 0px;
+		}
+		select{
+			position: relative;
+			left: 50px;
+		}
+		div{
+			padding-bottom: 20px;
+		}
+		
+		/*button:hover{
+			background-color: #5390F;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="regform"><h1>SEATING ARRANGEMENT</h1></div>
+	<div class="main">
+		<form action="seatingStudents.php" autocomplete="off" method="POST">
+			
+                
+                    <label class="name">SELECT YEAR</label>
+                    <select  class="hod" name="y1">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="All">All</option>
+                    </select>
+                    <select  class="hod" name="y2">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="All">All</option>
+                        <option value="N/A">N/A</option>
+                    </select>
+                
+			
+
+                    <label class="name">SELECT BRANCH</label>
+                    <select class="hod1" name="b1">
+                        <option value=""></option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="ME">ME</option>
+                        <option value="CE">CE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="All">All</option>
+                    </select>
+                    <select class="hod1" name="b2">
+                        <option value=""></option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="ME">ME</option>
+                        <option value="CE">CE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="All">All</option>
+                        <option value="N/A">N/A</option>
+                    </select>
+                  
+                        
+                        <div style="padding-top: 20px"><label class="name">NO OF STUDENTS IN EACH CLASS</label>
+                        <input type="text" name="num" />
+                    </div>
+                    
+                    
+             <button type="submit" name="submit_button">SUBMIT</button>
+        </form>
+        <form action="fileExpStudents.php" method="POST" >
+			<h2 class="name">DOWNLOAD FILE FORMAT</h2>
+			<select name="export_file_st" >
+			<option disabled="disabled" selected="selected">--Choose Option--</option>
+			<option value="xlsx">xlsx</option>
+			<option value="csv">csv</option>
+			<option value="xls">xls</option>
+			</select>
+
+			<button type="submit" name="export_btn_st">DOWNLOAD</button>
+		</form>
+        <form action="input.php">
+            <button formaction="admin.html" href="#" type="submit">RETURN   </button>
+        </form>
+		
+		
+
+	</div>
+</body>
+</html>	

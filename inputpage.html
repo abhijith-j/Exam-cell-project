@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="style_input.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Employee Details</div>
+      <div class="content">
+        <form action="inputtuple.php" autocomplete="off" method="POST">
+          <div class="employee-details">
+            <div class="input-box">
+              <span class="details">Name</span>
+              <input type="text" name="name" placeholder="Enter the name" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Employee Id</span>
+              <input type="text" name="empid" placeholder="Enter the employee id" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Department</span>
+              <input type="text" name="dept" placeholder="Enter the department" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Designation</span>
+              <select name="textbox4">
+                <option value=""></option>
+                <option value="HOD">HOD</option>
+                <option value="PROFESSOR">PROFESSOR</option>
+                <option value="ASSOCIATE">ASSOCIATE</option>
+                <option value="ASSISTANT">ASSISTANT</option>
+              </select>
+            </div>
+            <div class="button">
+              <input type="submit" value="Register" />
+            </div>
+          </div>
+        </form>
+        <form action="fileimp.php" method="POST" enctype="multipart/form-data">
+          <div class="input-box">
+            <div class="box">
+        <input type="file" id="choose_file" name="file_name">
+      </div>
+          </div>
+          <div class="button">
+            <input type="submit" name='sub' value="Import" />
+          </div>
+        </form>
+        <form action="delete.html">
+          <div class="button" >
+      <input type="submit" formaction="delete.html" value="Delete">
+      </div>
+        </form>
+        <form>
+          <div class="button">
+      <input  type="submit" formaction="admin.html" value="Back">
+      </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

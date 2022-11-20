@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        body{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(120deg,#0b65c5, #3b1d74);
+}
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid  #3b1d74;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background: linear-gradient(135deg, #71b7e6, #9b59b6);
+          color: white;
+          padding: 14px 20px;
+          margin: 4px 0;
+          border: none;
+          border-radius: 25px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color:rgb(0,0,0,0.6);
+          padding: 20px;
+          color : white;
+        }
+        </style>
+      </style>
+    </head>
+    <body>
+        <form action="studentDetIn.php" autocomplete="off" method="POST">
+            <div>
+                <b><label>Year</label></b>
+                <select name="year">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+          
+              <div>
+                <b><label>No. of students in CSE</label></b>
+                <input type="text" name="CSE" placeholder="eg. 63" />
+                <br />
+                <b><label>No. of students in ECE</label></b>
+                <input type="text" name="ECE" placeholder="eg. 63" />
+                <br />
+                <b><label>No. of students in EEE</label></b>
+                <input type="text" name="EEE" placeholder="eg. 63" />
+                <br />
+                <b><label>No. of students in ME</label></b>
+                <input type="text" name="ME" placeholder="eg. 63" />
+                <br />
+                <b><label>No. of students in CE</label></b>
+                <input type="text" name="CE" placeholder="eg. 63" />
+              </div>
+              <div>
+                <input type="submit" value="SUBMIT"/>
+              </div>
+              <div>
+                <input formaction="admin.html" href="#" type="submit" value="RETURN" />
+              </div>
+        </form>
+    </body>
+
+</html>

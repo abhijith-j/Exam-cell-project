@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <style>
+            [class*="container border"]{
+                padding: 1rem;
+                background-color: rgb(37, 40, 43);
+                opacity: 80%;
+                color: rgb(236, 231, 222);
+            }
+            [class*="row"]{
+                padding: 1rem;
+            }
+            [class*="input-group-text"]{
+                background-color: darkgray;
+                color: whitesmoke;
+            }
+            [class*="btn"]{
+                background-color:darkgray;
+                border: aliceblue;
+            }
+        </style>
+    </head>
+    <body background="mits3.jpeg">
+        <div class="container-xxl border">
+            <div class="row">
+                <div class="col">
+                    <div class="position-relative">
+                        <div class="btn btn-primary btn-sm" class="position-absolute top-0 start-0" type="button" name="back">BACK</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="jumbo">
+                        <h1>INPUT EMPLOYEE DETAILS</h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-end">
+                        <button class="btn btn-primary btn-sm" type="button" name="delete">DELETE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container border rounded">
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">Name</span>
+                            <input class="form-control" type="text" name="name" placeholder="Name"> 
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">EMPLOYEE ID</span>
+                            <input class="form-control" type="text" name="empid" placeholder="EMPLOYEE ID">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <span class="input-group-text">DEPARTMENT</span>
+                            <input class="form-control" type="text" name="dept" placeholder="DEPARTMENT">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="desig" aria-label="Text input with dropdown button">
+                            <button class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">DESIGNATION</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" value="HOD">Action</a></li>
+                                <li><a class="dropdown-item" value="ASSITANT">Another action</a></li>
+                                <li><a class="dropdown-item" value="ASSOCIATE">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js">
+    </body>
+
+</html>

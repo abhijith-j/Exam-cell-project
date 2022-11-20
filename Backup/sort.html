@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<form method="POST">
+		<label for='nodays'>No of Days</label>
+		<input type='text' name='nodays'><br>
+		<label for='nocls' >No of classes</label>
+		<input type='text' name='nocls'><br>
+		<label>DUTY ASSIGNMENT</label><br>
+		<label for='hod'>HOD</label>
+		<input type='text' name='hod'><br>
+		<label for='proff'>PROFESSOR</label>
+		<input type='text' name='proff'><br>
+		<label for='assist'>ASSISTANT</label>
+		<input type='text' name='assist'><br>
+		<label for='asocc'>ASSOCIATE</label>
+		<input type='text' name='asocc'><br>
+		<button type='submit' name="submit" formaction="sort.php">SUBMIT</button><br><br>
+	</form>
+	<form>
+		<button type='submit' formaction="admin.html">BACK</button>
+	</form><br>
+	<form action="fileexp.php" method="POST">
+		<select name="fileType" required class="form-control">
+			<option value="xlsx">xlsx</option>
+			<option value="csv">csv</option>
+			<option value="xls">xls</option>
+		</select>
+		<button type="submit" name="export_btn">Export</button>
+
+	</form>
+</body>
+</html>
